@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Jersey Online - Katalog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha384-xzjwRjRVp8fF5vX6r+ySG4A6wNAeD/O5I5n7j7ZDOxZtIiOjB0qJXY9P2ZLHITLl" crossorigin="anonymous">
+    <!-- Tambahkan stylesheet sesuai kebutuhan -->
+    <style>
+        header {
+            background: linear-gradient(to right, #3498db, #333);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background: linear-gradient(to right, #878585, #28a2d6);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 10px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .whatsapp_float {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            background-color: #25D366;
+            color: #fff;
+            padding: 10px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .whatsapp_float img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .catalog-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            justify-content: space-around;
+        }
+
+        .catalog-item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .catalog-item img {
+            max-width: 100%;
+            height: 200px; /* Set a specific height for the images */
+            object-fit: cover; /* Maintain aspect ratio and cover the container */
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .catalog-item h3 {
+            color: #333;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .catalog-item p {
+            color: #666;
+        }
+
+        .catalog-item a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .catalog-item a:hover {
+            background-color: #2980b9;
+        }
+        .add-to-cart-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .add-to-cart-btn:hover {
+            background-color: #2980b9;
+        }
+
+       
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Toko Jersey Online</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Beranda</a> |
+        <a href="katalog.html">Katalog</a> |
+        <a href="keranjang.html">Keranjang Belanja</a> |
+        <a href="hubungi-kami.html">Hubungi Kami</a>
+    </nav>
+
+    <section>
+        <div class="catalog-container">
+            <div class="catalog-item">
+                <img src="IMG_20150121_212653.png" alt="Jersey 1">
+                <h3>Jersey Home 2023</h3>
+                <p>Deskripsi singkat tentang jersey ini. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Beli Sekarang</a>
+                <button class="add-to-cart-btn" data-product-id="1">Tambah ke Keranjang</button>
+            </div>
+        
+            <div class="catalog-item">
+                <img src="OIP.jfif" alt="Jersey 2">
+                <h3>Jersey Away 2023</h3>
+                <p>Deskripsi singkat tentang jersey ini. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Beli Sekarang</a>
+                <button class="add-to-cart-btn" data-product-id="2">Tambah ke Keranjang</button>
+            </div>
+        
+            <!-- Tambahkan item-item lainnya sesuai kebutuhan -->
+            
+            <div class="catalog-item">
+                <img src="R.jfif" alt="Jersey 3">
+                <h3>Jersey Third Kit 2023</h3>
+                <p>Deskripsi singkat tentang jersey ini. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Beli Sekarang</a>
+                <button class="add-to-cart-btn" data-product-id="3">Tambah ke Keranjang</button>
+            </div>
+            
+            <div class="catalog-item">
+                <img src="barca.jfif" alt="Jersey 4">
+                <h3>Jersey Training 2023</h3>
+                <p>Deskripsi singkat tentang jersey ini. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Beli Sekarang</a>
+                <button class="add-to-cart-btn" data-product-id="4">Tambah ke Keranjang</button>
+            </div>
+            
+            <div class="catalog-item">
+                <img src="unnamed.jpg" alt="Jersey 5">
+                <h3>Jersey Training 2023</h3>
+                <p>Deskripsi singkat tentang jersey ini. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Beli Sekarang</a>
+                <button class="add-to-cart-btn" data-product-id="5">Tambah ke Keranjang</button>
+            </div>
+            
+            <div class="catalog-item">
+                <img src="51977f17baf68c8cf34aab8900e90006.jpg" alt="Jersey 6">
+                <h3>Jersey Training 2023</h3>
+                <p>Deskripsi singkat tentang jersey ini. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Beli Sekarang</a>
+                <button class="add-to-cart-btn" data-product-id="6">Tambah ke Keranjang</button>
+            </div>
+            
+            <!-- Tambahkan item-item lainnya sesuai kebutuhan -->
+        </div>
+        <a href="https://wa.me/085247329402" class="whatsapp_float" target="_blank" rel="noopener noreferrer">
+            <img src="https://logosmarcas.net/wp-content/uploads/2020/05/WhatsApp-Logo.png" alt="WhatsApp Icon">
+            <i class="fa fa-whatsapp whatsapp-icon"></i>
+        </a>
+    </section>
+    
+
+   
+
+</body>
+</html>
